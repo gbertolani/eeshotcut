@@ -22,7 +22,7 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/api/', methods=['POST'])
+@app.route('/', methods=['POST'])
 def api():
     if not request.is_json:
         return abort(400)
